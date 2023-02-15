@@ -1,0 +1,53 @@
+<div class="container-fluid">
+  <h1>Bootcamp enrollment form</h1>
+  <form #userForm="ngForm">
+
+    {{userForm.value|json}}
+    <hr />
+    {{userModel|json}}
+    <hr/>
+
+    <div class="form-group">
+        <label>Name:</label>
+        <input type="text" class="form-control" name="username" [(ngModel)]="userModel.name">
+    </div>
+    <div class="form-group">
+      <label>Email:</label>
+      <input type="email" class="form-control" name="email" [(ngModel)]="userModel.email">
+  </div>
+  <div class="form-group">
+    <label>phone:</label>
+    <input type="tel" class="form-control" name="phone" [(ngModel)]="userModel.phone">
+</div>
+<div class="form-group">
+  <select class="custom-select" name="topic" [(ngModel)]="userModel.topic">
+    <option selected>select topics</option>
+    <option *ngFor="let opt of topics">{{opt}}</option>
+  </select>
+</div>
+<div class="mb-3">
+  <label>Time preference</label>
+
+  <div class="for-check">
+    <input type="radio" name="time" value="morning" class="form-check-input" [(ngModel)]="userModel.time">
+    <label class="form-check-label">Morning(9am-11am)</label>
+  </div>
+
+  <div class="for-check">
+    <input type="radio" name="time" value="evening" class="form-check-input" [(ngModel)]="userModel.time">
+    <label class="form-check-label">Evening(5pm-8pm)</label>
+  </div>
+
+  
+
+  <div class="for-check mb-3">
+    <input type="checkbox"  class="form-check-input" name="promotion" [(ngModel)]="userModel.promotion">
+    <label class="form-check-label">Send me promotional offers</label>
+  </div>
+
+  <button class="btn btn-primary" type="submit">Submit</button>
+  
+
+</div>
+  </form>
+</div>

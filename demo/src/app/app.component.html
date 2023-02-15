@@ -1,0 +1,14 @@
+
+
+
+<input #inpt type="text">
+<button (click)="onclick(inpt.value)">click me</button>
+
+<input *ngIf="s" [(ngModel)]="name" type="text" value="{{name}}">
+
+<button (click)="clickme()">ok</button>
+
+<h2 *ngFor="let color of c" >{{color}}</h2>
+
+<app-my-comp [parentData]="n"></app-my-comp>
+
