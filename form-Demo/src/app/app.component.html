@@ -25,20 +25,22 @@
     <option *ngFor="let opt of topics">{{opt}}</option>
   </select>
 </div>
+<br>
 <div class="mb-3">
   <label>Time preference</label>
-
+<br>
   <div class="for-check">
     <input type="radio" name="time" value="morning" class="form-check-input" [(ngModel)]="userModel.time">
     <label class="form-check-label">Morning(9am-11am)</label>
   </div>
+  
 
   <div class="for-check">
     <input type="radio" name="time" value="evening" class="form-check-input" [(ngModel)]="userModel.time">
     <label class="form-check-label">Evening(5pm-8pm)</label>
   </div>
 
-  
+  <br>
 
   <div class="for-check mb-3">
     <input type="checkbox"  class="form-check-input" name="promotion" [(ngModel)]="userModel.promotion">
