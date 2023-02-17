@@ -10,4 +10,8 @@ export class AppComponent {
   title = 'form-Demo';
   topics=['angular','react','vue'];
   userModel =new User('kajal','krishu@gmail',8976453290,'','morning',true)
+
+  onSubmit(){
+    console.log(this.userModel)
+  }
 }

@@ -1,0 +1,8 @@
+<h1>welcome to pipe demo</h1>
+
+<h2>custom pipe: {{2|sqr}}</h2>
+<label>enter value:</label>
+<input type="text" #num value="{{n|sqr}}">
+<button (click)="onsqr(num.value)">Squere</button>
+<br>
+<!-- <button>{{n|sqr}}</button> -->

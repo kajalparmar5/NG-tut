@@ -1,0 +1,23 @@
+
+<div class="container-fluid">
+  <h1>Registtration Form</h1>
+  <form [formGroup]="registrationform">
+   <div class="form-group">
+      <label>Username</label>
+      <input formControlName="username" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+      <label>Password</label>
+      <input formControlName="password" type="password" class="form-control">
+    </div>
+    <div class="form-group">
+      <label>Confirm Password</label>
+      <input formControlName="confirmp" type="password" class="form-control">
+    </div>
+
+    <button class="btn btn-primary" type="submit">Submit</button>
+</form>
+
+<hr />
+{{registrationform.value|json}}
+</div>
