@@ -1,5 +1,6 @@
+import { ThisReceiver } from '@angular/compiler';
 import { Component } from '@angular/core';
-import {FormControl, FormGroup }  from '@angular/forms'
+import {AbstractControl, FormBuilder , Validator, Validators }  from '@angular/forms'
 
 
 @Component({
@@ -7,10 +8,29 @@ import {FormControl, FormGroup }  from '@angular/forms'
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
+
 export class AppComponent {
-  registrationform= new FormGroup({
-    username:new FormControl(''),
-    password:new FormControl(''),
-    confirmp:new FormControl('')
-  });
-}
+
+  constructor(private fb:FormBuilder){}
+
+  registrationform= this.fb.group({
+    username:['',[Validators.required,Validators.minLength(2),custom,Validators.maxLength(5)]],
+    password:[''],
+    confirmp:['']
+  })
+
+  
+  }
+  function custom (control: AbstractControl): {[key: string]: any} | null {
+    
+    const name:string=control.value
+    if(name==='admin'){
+           return {custom:true}
+     }
+    else{
+         return null
+        }
+      }
+  
+

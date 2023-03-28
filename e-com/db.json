@@ -1,0 +1,76 @@
+{
+  "seller": [
+    {
+      "user": "jay",
+      "email": "jay@gmail.com",
+      "pas": "4523",
+      "id": 1
+    },
+    {
+      "user": "",
+      "email": "",
+      "pas": "",
+      "id": 2
+    },
+    {
+      "user": "",
+      "email": "",
+      "pas": "",
+      "id": 3
+    },
+    {
+      "user": "kajal",
+      "email": "kajal@gmail",
+      "pas": "1234",
+      "id": 4
+    },
+    {
+      "user": "abc",
+      "email": "abc@gmail",
+      "pas": "abc",
+      "id": 5
+    },
+    {
+      "user": "jfeuf",
+      "email": "jciduwfr",
+      "pas": "cndwur",
+      "id": 6
+    },
+    {
+      "user": "k",
+      "email": "k",
+      "pas": "k",
+      "id": 7
+    },
+    {
+      "user": "kajol",
+      "email": "k@gmail",
+      "pas": "12345",
+      "id": 8
+    },
+    {
+      "user": "kajal",
+      "email": "kaju@gmail",
+      "pas": "123",
+      "id": 9
+    },
+    {
+      "user": "kajal",
+      "email": "kjl@gmail",
+      "pas": "efghi",
+      "id": 10
+    },
+    {
+      "user": "kd",
+      "email": "kd@gmail",
+      "pas": "kd",
+      "id": 11
+    },
+    {
+      "user": "kajal",
+      "email": "kaju@test",
+      "pas": "123",
+      "id": 12
+    }
+  ]
+}

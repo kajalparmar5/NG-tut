@@ -1,0 +1,30 @@
+<div class="mx-auto mt-5" style="width: 250px;">
+<div class="inpt">
+
+  <div class="input-group mb-3">
+    <input type="text" #value class="form-control" placeholder="Enter City"  aria-describedby="basic-addon2">
+    <div class="input-group-append">
+      <span class="input-group-text"(click)="onSearch(value.value)" style="background-color: rgb(50, 48, 47);color: aliceblue;">Search</span>
+    </div>
+  </div>
+
+
+
+</div>
+<div class="card text-light bg-dark mb-3" style="max-width: 18rem;">
+    <div class="card-header mx-auto" >
+        <h2 class="card-title">
+          {{city}} 
+        </h2>
+        <p><img src="{{imgUrl}}" alt="weather icon"></p>
+    </div>
+    <div class="card-body" style="background-color: transparent;">
+      <h5 class="card-title">Forecast</h5>
+      <p class="card-text"> Temperature:{{temp}} °F</p>
+      <p class="card-text">Feels Like:{{feel}} °F</p>
+      <p class="card-text">Pressure:{{pressure}} hPa</p>
+      <p class="card-text">Humidity:{{humidity}} %</p>
+      <p class="card-text">Summary:{{summary}}</p>
+    </div>
+  </div>
+</div>

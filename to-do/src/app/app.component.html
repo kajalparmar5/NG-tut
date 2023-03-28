@@ -1,0 +1,121 @@
+ <div class="mx-auto mt-5 " style="width: 500px;">
+<div class="input-group mb-3">
+  <input type="text" class="form-control" id="input" placeholder="Enter task..." name="task" #task>
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button" (click)="onAdd(task.value)">Add</button>
+  </div>
+
+</div>
+
+<ul>
+  <li *ngFor="let item of taskList" [ngClass]="{'completed': item.completed}">
+    <input type="checkbox"  (click)="markAsCompleted(item)"  name="cb" [(ngModel)]="item.isChecked" >
+    {{ item.name }}
+  </li>
+</ul>
+
+<div class="dropdown mt-2">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Sort
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#" (click)="onComplete()" >Complete</a>
+    <a class="dropdown-item" href="#" (click)="onRemain()">Remain</a>
+
+  </div>
+  <button  type="button" class="btn btn-secondary ml-2 " (click)=" onDelete()" >Delete</button>
+
+</div>
+
+
+
+</div>
+<router-outlet></router-outlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

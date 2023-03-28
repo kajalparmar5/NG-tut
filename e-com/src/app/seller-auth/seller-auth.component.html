@@ -1,0 +1,78 @@
+
+ <div  *ngIf="!toggle">
+    <h2>Seller signup</h2>
+    <div class="parent">
+  <form #seller_auth="ngForm" (ngSubmit)="onSubmit(seller_auth.value)">
+    <input
+      class="inpt"
+      type="text"
+      placeholder="enter username"
+      name="user"
+      ngModel
+    /><br />
+    <input
+      class="inpt"
+      type="email"
+      placeholder="entre email"
+      name="email"
+      ngModel
+    /><br />
+    <input
+      class="inpt"
+      type="password"
+      placeholder="enter password"
+      name="pas"
+      ngModel
+    /><br />
+    <button type="submit">Signup</button><br />
+    <a (click)="showLogin()">already have an account? click here</a>
+  </form>
+</div>
+</div>
+
+<!-- login -->
+
+<div *ngIf="toggle" class="child">
+    <h2>Seller Login </h2>
+    <div class="parent">
+  <form #seller_auth="ngForm" (ngSubmit)="onLogin(seller_auth.value)">
+    <input
+      class="inpt"
+      type="email"
+      placeholder="entre email"
+      name="email"
+      ngModel
+    /><br />
+    <input
+      class="inpt"
+      type="password"
+      placeholder="enter password"
+      name="pas"
+      ngModel
+    /><br />
+    <button type="submit">Login</button><br />
+    <a (click)="showLogin()" >don't have an account? click here</a>
+  </form>
+</div>
+
+
+
+  <!-- <h2>Seller Log in</h2>
+  <form #seller_auth="ngForm" >
+    <input
+      class="inpt"
+      type="email"
+      placeholder="entre email"
+      name="email"
+      ngModel
+    /><br />
+    <input
+      class="inpt"
+      type="password"
+      placeholder="enter password"
+      name="pas"
+      ngModel
+    /><br />
+    <button type="submit">Login</button>
+  </form> -->
+</div>

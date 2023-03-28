@@ -1,0 +1,37 @@
+<h1>{{title}}</h1>
+<!-- <p>{{user_data|json}}</p> -->
+
+<div *ngIf="flag==true">
+  <form #user_login="ngForm" (ngSubmit)="onLogin(user_login.value)">
+    <div>
+      <input type="text" ngModel name="username" placeholder="enter username">
+    </div><br>
+    <div>
+      <input type="text" ngModel name="password" placeholder="enter password">
+    </div><br>
+    <button type="submit">Login</button>
+  </form>
+  <div>
+    <a href="#" (click)="onFlag()"> new user?click here</a>
+  </div>
+</div>
+
+
+
+<div *ngIf="flag==false">
+  <form #userSignup="ngForm" (ngSubmit)="onSignup(userSignup.value)">
+    <div>
+      <input type="text" ngModel name="username" placeholder="enter username">
+    </div><br>
+    <div>
+      <input type="text" ngModel name="email" placeholder="enter email">
+    </div><br>
+    <div>
+      <input type="text" ngModel name="password" placeholder="enter password">
+    </div><br>
+    <button type="submit">Signup</button>
+  </form>
+  <a href="#" (click)="onFlag()">already a user?Login</a>
+</div>
+
+<router-outlet></router-outlet>

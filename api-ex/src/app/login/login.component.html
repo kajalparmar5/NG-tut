@@ -1,0 +1,17 @@
+<p>login works!</p>
+{{form_val |json}}
+<!-- <div>
+    <form #login_form="ngForm" (ngSubmit)="onLogin(login_form.value)">
+<input ngModel type="text" name="email" placeholder="enter email"><br><br>
+<input ngModel type="password" name="password" placeholder="entre password"><br><br>
+<button type="submit">Login</button>
+
+    </form>
+</div> -->
+
+
+<form #login="ngForm" (ngSubmit)="onLogin(login.value)">
+    <input type="text" name="username" ngModel >
+    <input type="text" name="password" ngModel>
+<button type="submit">submit</button>
+</form>

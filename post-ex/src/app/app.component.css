@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    justify-content: center;
+    border: 2px skyblue solid;
+    width: fit-content;
+    margin-top: 50px;
+}
+
+.err{
+    color: red;
+}
+
+h1{
+    text-align: center;
+    padding-top: 10px;
+    color: rgb(143, 200, 222);
+    font-family: 'lato'
+}
+
+.ls-link{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: blueviolet;
+}

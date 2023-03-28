@@ -1,0 +1,20 @@
+
+<div class="mx-auto" style="width: 200px;">
+  <form #login="ngForm" (ngSubmit)="onClick(login.value)">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" name="email" #email="ngModel" ngModel class="form-control" aria-describedby="emailHelp">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="text" name="Password" #password="ngModel" ngModel class="form-control">
+  </div>
+  
+  <button type="submit" class="btn btn-primary">Submit</button><br><br>
+  <button type="button" (click)="fetchData()" class="btn btn-primary">fetch</button><br><br>
+  <button type="button" (click)="clearData()" class="btn btn-primary">clear</button>
+
+
+</form>
+</div>
+<router-outlet></router-outlet>
